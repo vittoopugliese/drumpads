@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="files/favicon.png">
     <link rel="stylesheet" href="styles.css">
-    <title>exp</title>
+    <title>drumpads</title>
 </head>
 
 <body>
@@ -14,15 +15,56 @@
         <div id="kick">
             <audio id="audioKick" preload="metadata"></audio>
             <h1 class="letter" id="kickLetter">hover</h1>
-        </div>
+            <div class="dropdown" id="ddAct">
+                <div class="dropdown-content">
+                    <p id="kick1">Kick 1</p>
+                    <p id="kick2">Kick 2</p>
+                    <p id="kick3">Kick 3</p>
+                    <p id="kick4">Kick 4</p>
+                    <p id="kick5">Kick 5</p>
+                    <div>
+                        <label class="file" for="upload-photo">Load..</label>
+                        <input type="file" id="uploadKick" style="opacity: 0;" accept="audio/*"/>
+                    </div>
+                </div>
+            </div>
+            </div>
         <div id="clap">
             <audio id="audioClap" preload="metadata"></audio>
             <h1 class="letter" id="clapLetter">change</h1>
-        </div>
+            <div class="dropdown" id="ddAct">
+                <div class="dropdown-content">
+                    <p id="clap1">Clap 1</p>
+                    <p id="clap2">Clap 2</p>
+                    <p id="clap3">Clap 3</p>
+                    <p id="clap4">Clap 4</p>
+                    <p id="clap5">Clap 5</p>
+                    <div>
+                        <label class="file" for="upload-photo">Load..</label>
+                        <input type="file" id="uploadClap" style="opacity: 0;" accept="audio/*"/>
+                    </div>
+                </div>
+            </div>
+            </div>
         <div id="hat">
             <audio id="audioHat" preload="metadata"></audio>
             <h1 class="letter" id="hatLetter">key</h1>
-        </div>
+            <div class="dropdown" id="ddAct">
+                <div class="dropdown-content">
+                    <p id="hat1">Hat 1</p>
+                    <p id="hat2">Hat 2</p>
+                    <p id="hat3">Hat 3</p>
+                    <p id="hat4">Hat 4</p>
+                    <p id="hat5">Hat 5</p>
+                    <div>
+                        <label class="file" for="upload-photo">Load..</label>
+                        <input type="file" id="uploadHat" style="opacity: 0;" accept="audio/*"/>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <h6>how i use this?</h6>
     </div>
 
     <script src="app.js"></script>

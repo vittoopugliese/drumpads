@@ -9,7 +9,12 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-margin-top: 74px;
   user-select: none;
+  overflow: hidden;
+}
+#body {
+  overflow: hidden;
 }
 a {
   text-decoration: none !important;
@@ -88,7 +93,7 @@ h6:hover {
   font-size: 18px;
 }
 
-#ddAct{
+#ddAct {
   width: 30px;
   height: 30px;
   background-color: grey;
@@ -128,7 +133,7 @@ h6:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.file{
+.file {
   color: white;
   padding: 12px 16px;
   text-decoration: none;
@@ -139,7 +144,7 @@ h6:hover {
 }
 #uploadKick,
 #uploadClap,
-#uploadHat{
+#uploadHat {
   opacity: 0;
   width: 100%;
   position: absolute;
@@ -147,6 +152,96 @@ h6:hover {
   bottom: 0px;
   cursor: pointer;
 }
+
+/* modal */
+.modal {
+  display: none;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 64vw;
+  height: 74vh;
+  max-width: 740px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px auto;
+  padding: 30px;
+  background-color: white;
+  border: 2px solid grey;
+  border-radius: 30px;
+  transition: 0.154s cubic-bezier(0.23, 1, 0.32, 1);
+  text-align: center;
+  gap: 15px;
+}
+.modalBg {
+  display: none;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  transition: 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.modal h1 {
+  font-weight: 900;
+  font-size: 40px;
+}
+.modal h2 {
+  font-weight: 900;
+  font-size: 30px;
+}
+.modal h3 {
+  font-size: 22px;
+}
+.x {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+.otherStuff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.stuffContainer {
+  font-size: 26px;
+  margin-top: 5px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: black;
+  font-weight: 900;
+}
+.stuffContainer img {
+  width: 44px;
+  filter: brightness(1.1) contrast(1.1);
+}
+.sc:hover {
+  color: #ff8c00;
+}
+.tw:hover {
+  color: #36c9ff;
+}
+.nft:hover {
+  color: #ffce7a;
+}
+.nft {
+  filter: brightness(0.95) contrast(0.95);
+}
+
+/* mediaQueris ! */
 @media (max-width: 780px) {
   #container {
     gap: 20px;
@@ -169,6 +264,21 @@ h6:hover {
     width: 120px;
     height: 120px;
     background-color: rgb(144, 144, 144);
+  }
+  .modal {
+    padding: 15px;
+  }
+  .modal h1 {
+    font-size: 32px;
+  }
+  .modal h2 {
+    font-size: 24px;
+  }
+  .modal h3 {
+    font-size: 18px;
+  }
+  .stuffContainer {
+    font-size: 24px;
   }
 }
 @media (max-width: 540px) {
@@ -193,5 +303,44 @@ h6:hover {
     width: 90px;
     height: 90px;
     background-color: rgb(144, 144, 144);
+  }
+  .modal {
+    height: 80vh;
+    width: 84vw;
+    padding: 10px;
+  }
+  .modal h1 {
+    font-size: 27px;
+  }
+  .modal h2 {
+    font-size: 20px;
+  }
+  .modal h3 {
+    font-size: 16px;
+  }
+  .stuffContainer {
+    font-size: 20px;
+  }
+  .stuffContainer img {
+    width: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .modal {
+    height: 85vh;
+    width: 90vw;
+    padding: 5px;
+  }
+  .modal h1 {
+    font-size: 25px;
+  }
+  .modal h2 {
+    font-size: 18px;
+  }
+  .modal h3 {
+    font-size: 15px;
+  }
+  .stuffContainer {
+    font-size: 18px;
   }
 }

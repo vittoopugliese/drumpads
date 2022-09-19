@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="files/favicon.png">
     <link rel="stylesheet" href="styles.css">
-    <title>drumpads</title>
+    <title>drumpads !</title>
 </head>
 
-<body>
+<body id="body">
+    <!-- <img width="38px" src="files/rotate.svg" alt="rotate pads" id="rotateContainer"> -->
     <div id="container">
         <div id="kick">
             <audio id="audioKick" preload="metadata"></audio>
@@ -20,15 +21,14 @@
                     <p id="kick1">Kick 1</p>
                     <p id="kick2">Kick 2</p>
                     <p id="kick3">Kick 3</p>
-                    <p id="kick4">Kick 4</p>
-                    <p id="kick5">Kick 5</p>
+                    <p id="kick4">Uploaded Kick</p>
                     <div>
-                        <label class="file" for="upload-photo">Load..</label>
-                        <input type="file" id="uploadKick" style="opacity: 0;" accept="audio/*"/>
+                        <label class="file" for="upload">Load..</label>
+                        <input type="file" id="uploadKick" style="opacity: 0;" accept="audio/*" />
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
         <div id="clap">
             <audio id="audioClap" preload="metadata"></audio>
             <h1 class="letter" id="clapLetter">change</h1>
@@ -37,15 +37,14 @@
                     <p id="clap1">Clap 1</p>
                     <p id="clap2">Clap 2</p>
                     <p id="clap3">Clap 3</p>
-                    <p id="clap4">Clap 4</p>
-                    <p id="clap5">Clap 5</p>
+                    <p id="clap4">Uploaded Clap</p>
                     <div>
-                        <label class="file" for="upload-photo">Load..</label>
-                        <input type="file" id="uploadClap" style="opacity: 0;" accept="audio/*"/>
+                        <label class="file" for="upload">Load..</label>
+                        <input type="file" id="uploadClap" style="opacity: 0;" accept="audio/*" />
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
         <div id="hat">
             <audio id="audioHat" preload="metadata"></audio>
             <h1 class="letter" id="hatLetter">key</h1>
@@ -54,17 +53,54 @@
                     <p id="hat1">Hat 1</p>
                     <p id="hat2">Hat 2</p>
                     <p id="hat3">Hat 3</p>
-                    <p id="hat4">Hat 4</p>
-                    <p id="hat5">Hat 5</p>
+                    <p id="hat4">Uploaded Hat</p>
                     <div>
-                        <label class="file" for="upload-photo">Load..</label>
-                        <input type="file" id="uploadHat" style="opacity: 0;" accept="audio/*"/>
+                        <label class="file" for="upload">Load..</label>
+                        <input type="file" id="uploadHat" style="opacity: 0;" accept="audio/*" />
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
 
-        <h6>how i use this?</h6>
+        <h6 id="userGuide">how i use this?</h6>
+        <div class="modalBg"></div>
+        <div class="modal">
+            <h1 class="x" onclick="closeModal()">x</h1>
+            <h1>
+                Hi, this is drumpads !
+            </h1>
+            <h3>A drumpad is a clickable thing that when you press it, it plays a sound! There are
+                pre-loaded samples to play and you can load your own by clicking Load... on the sample
+                selector!</h3>
+            <h2>What means Hover Change Key?</h2>
+            <h3>If you are viewing this site on your PC, you can assign a letter to play determinated sample when you
+                play that key.
+                To do this, you just put the cursor (not clicking it!!!) on the pad you want to write a letter to it,
+                and the letter will be
+                assigned to that pad!
+                <br><br>
+                Once you know what the hovering thing is, by hovering the little dot besides thes pads, then you will be
+                free to select a pre-loaded sample or load your own, possibilities are endless!
+            </h3>
+            <div class="otherStuff">
+                <h2>Check my other stuff . . !</h2>
+                <a href="https://soundcloud.com/vittoopugliese" target="_blank" class="stuffContainer sc">
+                    <img width="44px" src="files/sc.svg" alt="soundcloud icon">
+                    SoundCloud
+                </a>
+                <a href="https://twitter.com/vittoopugliese" target="_blank" class="stuffContainer tw">
+                    <img width="44px" src="files/tw.svg" alt="twitter icon">
+                    Twitter
+                </a>
+                <a href="https://nftorio.vittoriopugliese.com/pages/images.html" target="_blank"
+                    class="stuffContainer nft">
+                    <img width="44px" src="https://nftorio.vittoriopugliese.com/imgs/favicon.png" alt="twitter icon">
+                    NFTorio
+                </a>
+            </div>
+        </div>
+    </div>
+
     </div>
 
     <script src="app.js"></script>
